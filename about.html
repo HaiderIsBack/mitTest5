@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Malaysian Institute of Technology</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap" rel="stylesheet">
+</head>
+<style>
+body{
+padding :0;
+margin :0;
+background-color : #333;
+}
+.navigation{
+background-color :white;
+color:#222;
+padding : 20px 40px;
+font-size : 50px;
+font-family : 'Montserrat', sans-serif;
+border-radius :3px;
+box-shadow : 0px 10px 0px gray;
+transition :0.4s;
+animation-name: gecko;
+animation-duration : 4s;
+animation-timing-function:linear;
+animation-delay:2s;
+animation-iteration-count:infinite;
+position:fixed;
+width:100%;
+}
+@keyframes gecko{
+ 0% {
+color :#222;
+}
+50%{
+color :orange;
+}
+100%{
+color :#222;
+}
+}
+.navigation a:hover{
+color:orange;
+}
+.logoSearch{
+background-color :azure ;
+border-radius :50px;
+color :black;
+border:none;
+outline-color:azure ;
+font-size : 20px;
+padding :15px 30px;
+margin-left :150px;
+margin-top :-55px;
+width:50%;
+box-shadow : 0px 3px 3px black;
+}
+ul{
+list-style-type: none;
+display :flex ;
+}
+.shortcuts{
+margin-top :-65px;
+font-size : 25px;
+padding : 0px 0px;
+margin-left : 70%;
+}
+.shortcuts ul li a{
+height:20px;
+margin-left : 15px;
+color:azure;
+text-decoration:none;
+font-weight :bold;
+background-color :#222;
+padding :9px 8px;
+border-radius :25px;
+transition : 0.1s;
+}
+a:active{
+color:gray;
+}
+.shortcuts ul li a:active{
+box-shadow :none;
+}
+.shortcuts ul li a:hover{
+cursor:pointer;
+color :orange;
+box-shadow :#111;
+box-shadow : 0px 6px 6px gray;
+}
+.reasons{
+background-color : black;
+color : white;
+padding : 25px 25px;
+font-family : 'Montserrat', sans-serif;
+}
+.header{
+position :absolute  ;
+top:150px;
+font-size : 40px;
+text-shadow: 0px 6px 6px black;
+}
+.paragraph{
+top:150px;
+font-size : 20px;
+text-shadow: 0px 6px 6px black;
+}
+</style>
+<body>
+
+<nav class="navigation">
+<div>
+	<b><a>M.I.T</a></b>
+</div>
+<div>
+	<input type="text" placeholder ="Search" class="logoSearch">
+</div>
+<div class ="shortcuts">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+	</ul>
+</div>
+</nav>
+
+<div class="reasons">
+		<h2 class="header" >Why we are struggling?</h2>
+		<p class="paragraph" >As Graduated Candidates does not find any job because of Experience. We provide Technical Education which means Practical Education</p>
+</div>
+
+</body>
+</html>

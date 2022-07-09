@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My ATM</title>
+  <link rel="stylesheet" href="ATM.css">
+</head>
+<body>
+  
+<form action="ATM_MAIN.html">
+  <div class="credentials">
+    <h1 class="AuthTitle">Login/SignUp</h1>
+    <div class="inputbars">
+      <input type="text" name="username" id="" value="" class="userName" placeholder="Username" required/>
+    </div>
+    <div class="inputbars">
+       <input type="number" name="pin" id="" value=""  maxlength="4" class="pinBar" placeholder="PIN" required/>
+    </div>
+    <div class="submitbtns">
+      <button class="Submit" type="submit">Login</button>
+      <button class="Submit2" type="submit">SignUp</button>
+    </div>
+  </div>
+</form>
+  
+</body>
+</html>
+
+<?php
+extract($_REQUEST);
+$file=fopen ("atmData.txt","a");
+fwrite($file, "Username : ");
+fwrite($file, $username ."\n");
+fwrite($file, "Pin : ");
+fwrite($file, $pin ."\n");
+fclose ($file);
+?>
